@@ -13,6 +13,7 @@ if sign=='/':
 if sign=='*':
   sc=num1*num2
 st.title("أهلاً بك في لعبه الذكاء التابعه ل محمد احمد رياض ")
+st.write(num1,sign,num2)
 number=st.number_input("ادخل اجابتك")
 if number==sc:
  st.succes("انك عبقري ")
