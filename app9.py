@@ -1,0 +1,20 @@
+import random 
+import streamlit as st 
+num=0
+num1=random.randint(1,20)
+num2=random.randint(1,20)
+sign=random.choice(['+','-','*','/'])
+if sign=='+':
+  sc=num1+num2
+if sign=='-':
+  sc=num1-num2
+if sign=='/':
+  sc=num1/num2 
+if sign=='*':
+  sc=num1*num2
+st.title("أهلاً بك في لعبه الذكاء التابعه ل محمد احمد رياض ")
+number=st.number_input("ادخل اجابتك")
+if number==sc:
+ st.succes("انك عبقري ")
+else:
+ st.error("اجابتك خطأ ")
